@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Calming manatee</title>
+
+  
+</head>
+<body onload="thisThing()">
+  <p id="demo" style="text-align: center; padding-top: 40px; height:40%">
+    <a id="imagelink" href="#blank">
+    <img id="manatee" width=90%/>
+  </a> 
+<br />
+    <button onclick="thisThing()">another</button>
+        </p> 
+    
+    <script>
+      function thisThing() {
+        const images = ["Milwaukee_Public_Museum_November_2022_101_(Manatee_at_Blue_Springs,_Florida).jpg","Manatee_with_calf.PD_-_colour_corrected.jpg","Manatee_at_Ocean_Expo_Park.jpg","Manatee_Looking_at_the_Camera.jpg","Hpim0279.jpg","Mother_manatee_and_calf.jpg","Manatee_photo.jpg","Cy manatee1a - FLORIDA MANATEE Trichechus manatus latirostris.jpg","Manatee - Blue Spring State Park.JPG","Manatee and diver.jpg","Manatee (3022696807).jpg","Manatee-columbus.jpg","Manatee_aquatic_animals.jpg","Manatee Florida.jpg","Manatee swims underwater.jpg","Manatee - panoramio (3).jpg","Manatee at SeaWorld.JPG","Manatee rooting in sand.jpg"];
+        var theImage;
+        const random = Math.floor(Math.random() * images.length);
+        theImage = images[random];
+        document.getElementById("manatee").src = "https://commons.wikimedia.org/wiki/Special:FilePath/" + theImage;
+        document.getElementById('imagelink').href = "https://commons.wikimedia.org/wiki/File:" + theImage
+    }
+    </script>
+</body>
+</html>
